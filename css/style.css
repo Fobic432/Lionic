@@ -538,6 +538,14 @@ opacity: 0;
   padding-top: 48px;
 }
 
+.contacts-item-tel {
+  width: 121px;
+}
+
+.contacts-item-mail-block {
+  width: 170px;
+}
+
 .contacts-item-location {
   background-image: url("../img/location.svg");
 }
@@ -579,6 +587,15 @@ opacity: 0;
 
 .contacts-item-link:focus {
   outline: 1px solid #71A7E2 ;
+}
+
+.contacts-item-link:hover {
+  color: #71A7E2 ;
+}
+
+.contacts-item-link:active {
+  outline: none;
+  color: #0E3B6C ;
 }
 
 /* join us */
@@ -630,6 +647,20 @@ opacity: 0;
   opacity: 0.6;
 }
 
+.form-input:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form-input:hover {
+  border-color: #71A7E2;
+}
+
+.form-input:active {
+  border-color: #0E3B6C;
+}
+
 .form-input:nth-last-child(-2n+2) {
   margin-bottom: 0;
 }
@@ -645,6 +676,20 @@ opacity: 0;
   opacity: 0.6;
 }
 
+.form-select:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form-select:hover {
+  border-color: #71A7E2;
+}
+
+.form-select:active {
+  border-color: #0E3B6C;
+}
+
 .form-textarea {
   box-sizing: border-box;
   padding: 16px 28px;
@@ -655,6 +700,20 @@ opacity: 0;
   border-radius: 20px;
   opacity: 0.6;
   resize: none;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form-textarea:hover {
+  border-color: #71A7E2;
+}
+
+.form-textarea:active {
+  border-color: #0E3B6C;
 }
 
 .form-bottom {
@@ -722,22 +781,45 @@ opacity: 0;
 }
 
 .social-link {
-  display: block;
+  display: flex;
   width: 24px;
   height: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-link-tw {
-  background-image: url("../img/footer-twitter.svg");
+.social-link svg {
+  fill: #000;
 }
 
-.social-link-linkedin {
-  background-image: url("../img/footer-linkedin.svg");
+.social-link-mail svg {
+  fill: transparent;
+  stroke: #000;
 }
 
-.social-link-mail {
-  background-image: url("../img/footer-mail.svg");
+.social-link:focus  {
+  outline-offset: 2px;
+  outline: 1px solid #71A7E2;
+}
+
+.social-link:hover svg {
+  fill: #71A7E2;
+}
+
+.social-link-mail:hover svg {
+  fill: transparent;
+  stroke: #71A7E2;
+}
+
+.social-link:active {
+  outline: none;
+}
+
+.social-link:active svg {
+  fill: #3172B9;
+}
+
+.social-link-mail:active svg {
+  fill: transparent;
+  stroke: #3172B9;
 }
